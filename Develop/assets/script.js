@@ -19,10 +19,10 @@ $(document).ready(function(){
             } else {$(this).addClass("future");
             $(this).removeClass("past");
             $(this).removeClass("present");
+            var timeInterval = setInterval(timeChange, 1000);
             }
         })
     }
-    var timeInterval = setInterval(timeChange, 1000);
     
     // will set scheduled event to a certain time
     $(".saveBtn").on("click", function(){
