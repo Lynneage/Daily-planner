@@ -22,7 +22,7 @@ $(document).ready(function(){
             }
         })
     }
-
+    var timeInterval = setInterval(timeChange, 1000);
     
     // will set scheduled event to a certain time
     $(".saveBtn").on("click", function(){
