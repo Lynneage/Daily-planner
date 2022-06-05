@@ -22,8 +22,7 @@ $(document).ready(function(){
             }
         })
     }
-    timeChange();
-    var timeInterval = setInterval(timeChange, 1000);
+
     
     // will set scheduled event to a certain time
     $(".saveBtn").on("click", function(){
@@ -57,3 +56,5 @@ $(document).ready(function(){
 
 
 });
+timeChange();
+var timeInterval = setInterval(timeChange, 1000);
