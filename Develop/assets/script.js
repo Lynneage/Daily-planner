@@ -3,26 +3,10 @@
 var today = moment();
 
 
-// sets date
 $(document).ready(function(){
     $("#currentDay").text(moment().format("MM/DD/YYYY"));
-    function timeChange(){
-        var Hour = moment().hour(); 
-        // color coding for time of day (past grey/curret hour red/ ahead green)
-        $('.time-block').each(function(){
-            var TOD = parseInt($(this).attr("id"));
-            if (TOD < Hour){
-                $(this).addClass("past");
-            } else if (TOD === Hour){
-                $(this).addClass("present");
-                $(this).removeClass("past");
-            } else {$(this).addClass("future");
-            $(this).removeClass("past");
-            $(this).removeClass("present");
-            var timeInterval = setInterval(timeChange, 1000);
-            }
-        })
-    }
+    
+
     
     // will set scheduled event to a certain time
     $(".saveBtn").on("click", function(){
@@ -52,9 +36,4 @@ $(document).ready(function(){
     $("#23 .description").val(localStorage.getItem("23"));
     $("#24 .description").val(localStorage.getItem("24"));
 
-    
-
-
 });
-timeChange();
-var timeInterval = setInterval(timeChange, 1000);
