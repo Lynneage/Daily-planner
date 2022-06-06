@@ -28,12 +28,5 @@ $(document).ready(function(){
     $("#15 .description").val(localStorage.getItem("15"));
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
-    $("#18 .description").val(localStorage.getItem("18"));
-    $("#19 .description").val(localStorage.getItem("19"));
-    $("#20 .description").val(localStorage.getItem("20"));
-    $("#21 .description").val(localStorage.getItem("21"));
-    $("#22 .description").val(localStorage.getItem("22"));
-    $("#23 .description").val(localStorage.getItem("23"));
-    $("#24 .description").val(localStorage.getItem("24"));
 
 });
